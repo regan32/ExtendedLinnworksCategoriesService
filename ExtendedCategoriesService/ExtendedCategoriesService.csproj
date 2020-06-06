@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.4" />
+      <PackageReference Include="Serilog" Version="2.9.0" />
+      <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ExtendedCategoriesService.LinnSystemsClient\ExtendedCategoriesService.LinnSystemsClient.csproj" />
+      <ProjectReference Include="..\ExtendedCategoriesService.WebApi\ExtendedCategoriesService.WebApi.csproj" />
+    </ItemGroup>
+
+</Project>
